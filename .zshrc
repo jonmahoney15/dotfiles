@@ -58,9 +58,10 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export TMUX_PLUGIN_MANAGER_PATH="~/.config/tmux/tpm/tpm"
+export TMUX_PLUGIN_MANAGER_PATH="/home/vagrant/.config/tmux/tpm/tpm"
 export PATH="/home/vagrant/.local/bin:$PATH"
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/home/vagrant/.cargo/bin"
 
 export NODE_OPTIONS="--max-old-space-size=8192"
 
@@ -69,6 +70,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+alias vim=nvim
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
