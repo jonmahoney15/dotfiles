@@ -9,6 +9,12 @@ return {
           jdtls = {
             settings = {
               java = {
+                format = {
+                  settings = {
+                    url = "/home/vagrant/dotfiles/.config/nvim/lua/plugins/java/eclipse-java-google-style.xml",
+                    profile = "GoogleStyle",
+                  },
+                },
                 configuration = {
                   runtimes = {
                     {
