@@ -13,5 +13,11 @@ map(
   "n",
   "<leader>rt",
   ":JavaTestRunCurrentClass<CR>",
-  { desc = "Run current java test class and show report." }
+  { desc = "Run current java test class." }
+)
+map(
+  "n",
+  "<leader>z",
+  ":ZenMode<CR>",
+  { desc = "Toggle ZenMode." }
 )
