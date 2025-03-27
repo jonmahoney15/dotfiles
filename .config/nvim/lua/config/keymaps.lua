@@ -15,24 +15,36 @@ map(
   ":JavaTestRunCurrentClass<CR>",
   { desc = "Run current java test class." }
 )
+
 map(
   "n",
   "<leader>rc",
   ":JavaTestRunCurrentMethod<CR>",
   { desc = "Run current java test method." }
 )
+
 map(
   "n",
   "<leader>rd",
   ":JavaTestDebugCurrentMethod<CR>",
   { desc = "Debug current java test." }
 )
+
 map(
   "n",
   "<leader>z",
   ":ZenMode<CR>",
   { desc = "Toggle ZenMode." }
 )
-map( "n", "<leader>gp", ":Gitsigns preview_hunk<CR>",
+
+map( "n", "<leader>gv", ":Gitsigns preview_hunk<CR>",
   { desc = "Git Preview." }
+)
+
+map( "n", "<leader>gn", ":Gitsigns next_hunk<CR>",
+  { desc = "Go to next Git change." }
+)
+
+map( "n", "<leader>gp", ":Gitsigns prev_hunk<CR>",
+  { desc = "Go to previous Git change." }
 )
