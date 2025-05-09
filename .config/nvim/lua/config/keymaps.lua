@@ -48,3 +48,7 @@ map( "n", "<leader>gn", ":Gitsigns next_hunk<CR>",
 map( "n", "<leader>gp", ":Gitsigns prev_hunk<CR>",
   { desc = "Go to previous Git change." }
 )
+
+map("v", "<leader>ss", ":Silicon<CR>",
+  { desc = "Silicon Code ScreenShot" }
+)
