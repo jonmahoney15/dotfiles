@@ -18,8 +18,8 @@ return {
                 configuration = {
                   runtimes = {
                     {
-                      name = "Java-17",
-                      path = "/home/vagrant/.sdkman/candidates/java/current",
+                      name = "Java",
+                      path = "/home/vagrant/.sdkman/candidates/java/21.0.6-tem/",
                     },
                   },
                 },
