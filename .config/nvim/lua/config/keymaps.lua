@@ -11,27 +11,6 @@ end
 
 map(
   "n",
-  "<leader>rt",
-  ":JavaTestRunCurrentClass<CR>",
-  { desc = "Run current java test class." }
-)
-
-map(
-  "n",
-  "<leader>rc",
-  ":JavaTestRunCurrentMethod<CR>",
-  { desc = "Run current java test method." }
-)
-
-map(
-  "n",
-  "<leader>rd",
-  ":JavaTestDebugCurrentMethod<CR>",
-  { desc = "Debug current java test." }
-)
-
-map(
-  "n",
   "<leader>z",
   ":ZenMode<CR>",
   { desc = "Toggle ZenMode." }
