@@ -58,12 +58,12 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export TMUX_PLUGIN_MANAGER_PATH="/home/vagrant/.config/tmux/tpm/tpm"
-export PATH="/home/vagrant/.local/bin:$PATH"
+export TMUX_PLUGIN_MANAGER_PATH="~/.config/tmux/tpm/tpm"
+export PATH="~/.local/bin:$PATH"
 export PATH="$PATH:/opt/nvim-linux64/bin"
-export PATH="$PATH:/home/vagrant/.cargo/bin"
+export PATH="$PATH:~/.cargo/bin"
 export PATH="$PATH:/usr/local/go/bin"
-export PATH="$PATH:/home/vagrant/go/bin"
+export PATH="$PATH:~/go/bin"
 
 export NODE_OPTIONS="--max-old-space-size=8192"
 
