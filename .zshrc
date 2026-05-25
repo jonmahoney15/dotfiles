@@ -83,3 +83,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 if [[ -z "$TMUX" ]]; then
   command -v neofetch >/dev/null && neofetch
 fi
+
+# opencode
+export PATH=/Users/jonathan/.opencode/bin:$PATH
