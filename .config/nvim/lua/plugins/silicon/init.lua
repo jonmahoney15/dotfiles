@@ -9,7 +9,7 @@ return {
 			return args.line1
 		end,
     output = function()
-	    return "/vagrant/download/screen-shots/" .. os.date("!%Y-%m-%dT%H-%M-%SZ") .. "_code.png"
+	    return "$HOME/screen-shots/" .. os.date("!%Y-%m-%dT%H-%M-%SZ") .. "_code.png"
 	  end,
 	}
 }
