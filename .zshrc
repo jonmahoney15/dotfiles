@@ -58,7 +58,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export TMUX_PLUGIN_MANAGER_PATH="~/.config/tmux/tpm/tpm"
+export TMUX_PLUGIN_MANAGER_PATH="~/.config/tmux/tpm"
 export PATH="~/.local/bin:$PATH"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:~/.cargo/bin"
@@ -84,5 +84,7 @@ if [[ -z "$TMUX" ]]; then
   command -v neofetch >/dev/null && neofetch
 fi
 
-# opencode
-export PATH=/Users/jonathan/.opencode/bin:$PATH
+# ZVM
+export ZVM_INSTALL="$HOME/.zvm/self"
+export PATH="$PATH:$HOME/.zvm/bin"
+export PATH="$PATH:$ZVM_INSTALL/"

@@ -9,7 +9,7 @@ return {
 			return args.line1
 		end,
     output = function()
-	    return "$HOME/screen-shots/" .. os.date("!%Y-%m-%dT%H-%M-%SZ") .. "_code.png"
+	    return os.getenv("HOME") .. "/screen-shots/" .. os.date("!%Y-%m-%dT%H-%M-%SZ") .. "_code.png"
 	  end,
 	}
 }
